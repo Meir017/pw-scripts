@@ -1,2 +1,2 @@
-# pw-scripts
+# pwsh-scripts
 Random pwsh scripts
