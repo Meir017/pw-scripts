@@ -58,6 +58,9 @@ if (!$SkipDotNet) { WingetInstall 'Microsoft.DotNet.SDK.8' }
 
 # Development tools:
 WingetInstall 'Microsoft.VisualStudioCode'
+WingetInstall 'Docker.DockerDesktop'
+WingetInstall 'Kubernetes.kubectl' # https://kubernetes.io/docs/reference/kubectl/
+WingetInstall 'Derailed.k9s' # https://k9scli.io/
 
 # Azure tools:
 if (!$SkipAzureTools) {
@@ -66,6 +69,7 @@ if (!$SkipAzureTools) {
     WingetInstall 'Microsoft.Azure.DataCLI' # https://learn.microsoft.com/en-us/sql/azdata/install/deploy-install-azdata
     WingetInstall 'Microsoft.Bicep' # https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/
     WingetInstall 'Microsoft.Azure.Kubelogin' # https://learn.microsoft.com/en-us/azure/aks/kubelogin-authentication
+    WingetInstall 'Microsoft.devtunnel' # https://learn.microsoft.com/en-us/azure/developer/dev-tunnels/get-started?tabs=windows
 }
 
 # Other tools:
